@@ -185,6 +185,37 @@ h1 {
   color: white;
 }
 
+.keyboard-row {
+  display: flex;
+  justify-content: center;
+}
+
+.key {
+  display: inline-flex;
+  width: 2rem;
+  height: 2rem;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 3px;
+  margin: 2px;
+}
+
+.key.correct {
+  background: var(--color-success);
+  color: white;
+}
+
+.key.incorrect {
+  background: var(--color-gray-300);
+  color: white;
+}
+
+.key.misplaced {
+  background: var(--color-warning);
+  color: white;
+}
+
 .visually-hidden {
   position: absolute;
   overflow: hidden;
